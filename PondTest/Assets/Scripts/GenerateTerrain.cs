@@ -19,8 +19,8 @@ public class GenerateTerrain : MonoBehaviour
     public GameObject player;
 
     int planeSize = 10;
-    public int halfTileX = 10;
-    public int halfTileZ = 10;
+    public int halfTileX = 5 ;
+    public int halfTileZ = 5;
 
     Vector3 startPos;
 

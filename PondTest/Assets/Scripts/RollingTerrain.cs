@@ -31,7 +31,7 @@ public class RollingTerrain : MonoBehaviour
         index = 0;
         for (i = 0; i < verticies.Length; i++)
         {
-            verticies[i].y = Mathf.PerlinNoise((verticies[i].x  + this.transform.position.x)/detailScale, (verticies[i].z + this.transform.position.z)/detailScale)* heightScale;
+            verticies[i].y = NoiseManager.instance.GetHeight((verticies[i].x  + this.transform.position.x)/detailScale, (verticies[i].z + this.transform.position.z)/detailScale)* heightScale;
   
         }
 
