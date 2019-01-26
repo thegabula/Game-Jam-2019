@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NoiseManager : MonoBehaviour
 {
@@ -9,6 +10,13 @@ public class NoiseManager : MonoBehaviour
     public float offsetFactor1;
     public float offsetFactor2;
     public float offsetFactor3;
+
+    public Text maxVal;
+    public Text minVal;
+
+
+    float max = 5;
+    float min = 4;
 
     // Start is called before the first frame update
     private void Awake()
@@ -46,8 +54,7 @@ public class NoiseManager : MonoBehaviour
         float tempX = x;
         float tempZ = z;
 
-        float max = 5;
-        float min = 4;
+
 
         Vector3 temp = new Vector3(tempX+50,0, tempZ);
 
@@ -72,12 +79,14 @@ public class NoiseManager : MonoBehaviour
 
         if (value > max)
         {
-            Debug.Log("Max = " + value);
+            //Debug.Log("Max = " + value.ToString());
+            maxVal.text = value.ToString();
             max = value;
         }
         if (value < min)
         {
-            Debug.Log("Min = " + value);
+            //   Debug.Log("Min = " + value);
+            minVal.text = value.ToString();
             min = value;
         }
 

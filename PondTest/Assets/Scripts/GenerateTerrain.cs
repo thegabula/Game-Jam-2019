@@ -6,6 +6,7 @@ public class Tile
 {
     public GameObject theTile;
     public float creationTime;
+    
 
     public Tile(GameObject t, float ct)
     {
@@ -17,6 +18,9 @@ public class GenerateTerrain : MonoBehaviour
 {
     public GameObject plane;
     public GameObject player;
+
+
+    
 
     int planeSize = 10;
     public int halfTileX = 5 ;
