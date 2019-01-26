@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 8761a4dae83a05240afc2d07217cd090
+timeCreated: 1472268862
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature.001
+    100004: Dragon_Mesh
+    100006: Dragon_Mesh1
+    100008: Dragon_Mesh2
+    100010: //RootNode
+    100012: joint1
+    100014: joint1 1
+    100016: joint10
+    100018: joint10 1
+    100020: joint10_end
+    100022: joint10_end 1
+    100024: joint12
+    100026: joint13
+    100028: joint14
+    100030: joint14_end
+    100032: joint16
+    100034: joint17
+    100036: joint18
+    100038: joint19
+    100040: joint19_end
+    100042: joint2
+    100044: joint2 1
+    100046: joint21
+    100048: joint22
+    100050: joint23
+    100052: joint23_end
+    100054: joint3
+    100056: joint3 1
+    100058: joint3_end
+    100060: joint4
+    100062: joint4 1
+    100064: joint4_end
+    100066: joint5
+    100068: joint5 1
+    100070: joint5_end
+    100072: joint6
+    100074: joint6 1
+    100076: joint6_end
+    100078: joint7
+    100080: joint7_end
+    100082: joint8
+    100084: joint9
+    100086: pCube1
+    100088: Point
+    100090: polySurface1
+    100092: polySurface1.001
+    100094: polySurface2
+    100096: polySurface2.001
+    100098: polySurface3
+    100100: pPlane1
+    100102: pPlane2
+    100104: transform1
+    100106: transform1.001
+    100108: transform2
+    100110: transform2.001
+    100112: transform3
+    100114: transform3.001
+    100116: transform4
+    100118: transform4.001
+    100120: transform5
+    400000: Armature
+    400002: Armature.001
+    400004: Dragon_Mesh
+    400006: Dragon_Mesh1
+    400008: Dragon_Mesh2
+    400010: //RootNode
+    400012: joint1
+    400014: joint1 1
+    400016: joint10
+    400018: joint10 1
+    400020: joint10_end
+    400022: joint10_end 1
+    400024: joint12
+    400026: joint13
+    400028: joint14
+    400030: joint14_end
+    400032: joint16
+    400034: joint17
+    400036: joint18
+    400038: joint19
+    400040: joint19_end
+    400042: joint2
+    400044: joint2 1
+    400046: joint21
+    400048: joint22
+    400050: joint23
+    400052: joint23_end
+    400054: joint3
+    400056: joint3 1
+    400058: joint3_end
+    400060: joint4
+    400062: joint4 1
+    400064: joint4_end
+    400066: joint5
+    400068: joint5 1
+    400070: joint5_end
+    400072: joint6
+    400074: joint6 1
+    400076: joint6_end
+    400078: joint7
+    400080: joint7_end
+    400082: joint8
+    400084: joint9
+    400086: pCube1
+    400088: Point
+    400090: polySurface1
+    400092: polySurface1.001
+    400094: polySurface2
+    400096: polySurface2.001
+    400098: polySurface3
+    400100: pPlane1
+    400102: pPlane2
+    400104: transform1
+    400106: transform1.001
+    400108: transform2
+    400110: transform2.001
+    400112: transform3
+    400114: transform3.001
+    400116: transform4
+    400118: transform4.001
+    400120: transform5
+    4300000: polySurface2.001
+    4300002: polySurface3
+    7400000: Armature.001|Armature.001|Take 001|BaseLayer
+    7400002: Armature|Armature|Take 001|BaseLayer
+    9500000: //RootNode
+    13700000: polySurface2.001
+    13700002: polySurface3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
