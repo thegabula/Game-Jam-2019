@@ -72,7 +72,7 @@ public class NoiseManager : MonoBehaviour
 
         if (value > max)
         {
-            Debug.Log("Max = " _ value);
+            Debug.Log("Max = " + value);
             max = value;
         }
         if (value < min)
