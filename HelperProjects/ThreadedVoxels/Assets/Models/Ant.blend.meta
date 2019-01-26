@@ -1,10 +1,70 @@
 fileFormatVersion: 2
 guid: 8e68665811c574843aaf1f30e615224f
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
+    100000: abdomin
+    100002: //RootNode
+    100004: Armature
+    100006: back_thorax
+    100008: Bone_002
+    100010: Bone_005
+    100012: Bone_008
+    100014: Bone_011
+    100016: Bone_014
+    100018: Bone_017
+    100020: Bone_020
+    100022: Cube
+    100024: front_thorax
+    100026: lef3_l
+    100028: leg1_l
+    100030: leg1_r
+    100032: leg1l_l
+    100034: leg1l_r
+    100036: leg2_l
+    100038: leg2_r
+    100040: leg2l_l
+    100042: leg2l_r
+    100044: leg3_r
+    100046: leg3l_l
+    100048: leg3l_r
+    400000: abdomin
+    400002: //RootNode
+    400004: Armature
+    400006: back_thorax
+    400008: Bone_002
+    400010: Bone_005
+    400012: Bone_008
+    400014: Bone_011
+    400016: Bone_014
+    400018: Bone_017
+    400020: Bone_020
+    400022: Cube
+    400024: front_thorax
+    400026: lef3_l
+    400028: leg1_l
+    400030: leg1_r
+    400032: leg1l_l
+    400034: leg1l_r
+    400036: leg2_l
+    400038: leg2_r
+    400040: leg2l_l
+    400042: leg2l_r
+    400044: leg3_r
+    400046: leg3l_l
+    400048: leg3l_r
+    4300000: Cube
+    7400000: Default Take
+    7400002: ArmatureAction
+    9500000: //RootNode
+    13700000: Cube
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: 4c3bff8c03343fc4e9c52f6f54ac149f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -38,6 +98,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
@@ -55,11 +116,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -74,7 +140,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
