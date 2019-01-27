@@ -11,8 +11,8 @@ public class NoiseManager : MonoBehaviour
     public float offsetFactor2;
     public float offsetFactor3;
 
-    public Text maxVal;
-    public Text minVal;
+    //public Text maxVal;
+    //public Text minVal;
 
 
     float max = 5;
@@ -77,18 +77,18 @@ public class NoiseManager : MonoBehaviour
             value += Mathf.PerlinNoise(temp.x * offsetFactor3, temp.z * offsetFactor3) * (1);
         }
 
-        if (value > max)
-        {
-            //Debug.Log("Max = " + value.ToString());
-            maxVal.text = value.ToString();
-            max = value;
-        }
-        if (value < min)
-        {
-            //   Debug.Log("Min = " + value);
-            minVal.text = value.ToString();
-            min = value;
-        }
+        //if (value > max)
+        //{
+        //    //Debug.Log("Max = " + value.ToString());
+        //    maxVal.text = value.ToString();
+        //    max = value;
+        //}
+        //if (value < min)
+        //{
+        //    //   Debug.Log("Min = " + value);
+        //    minVal.text = value.ToString();
+        //    min = value;
+        //}
 
         return value;
     }
