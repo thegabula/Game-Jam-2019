@@ -100,7 +100,7 @@ MonoBehaviour:
   depthDivs: 30
   pondPrefab: {fileID: 7281995809490067808, guid: cce776768092815449dc42993230ff6f,
     type: 3}
-  insectSwarmPrefab: {fileID: 4633600736926844412, guid: c73e7dcfb6f84284a9578835c37a882d,
+  insectSwarmPrefab: {fileID: 4457427177446440834, guid: 0c2a505a1cad03f4f937f3cf730224af,
     type: 3}
   treePrefab: {fileID: 2665374326043154173, guid: bd912ec6c41840646aa17c4d75de3fd0,
     type: 3}
@@ -109,5 +109,5 @@ MonoBehaviour:
   hasBugs: 0
   hasTree: 0
   waterHeight: 30
-  bugHeight: 9
+  bugHeight: 19
   treeHeight: 29

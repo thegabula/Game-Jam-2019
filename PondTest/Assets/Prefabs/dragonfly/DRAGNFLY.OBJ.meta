@@ -1,39 +1,24 @@
 fileFormatVersion: 2
-guid: 279a4cbacc6cc174cb4b314f8bcb4f5e
+guid: 35a5a3476c96b4910947f6d1a748d523
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: obj0
-    100004: obj1
-    400000: //RootNode
-    400002: obj0
-    400004: obj1
-    2100000: QT_branch
-    2100002: ast1a
-    2100004: nadeln
-    2300000: obj0
-    2300002: obj1
-    3300000: obj0
-    3300002: obj1
-    4300000: obj0
-    4300002: obj1
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QT_branch
-    second: {fileID: 2100000, guid: 4f77e4d6105d87d4099153539c75c9b3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ast1a
-    second: {fileID: 2100000, guid: 33ae1fa1e33c5fb4187515574dfcd0b3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: nadeln
-    second: {fileID: 2100000, guid: fc234753b4d26b44f8fda479c841de82, type: 2}
+    100000: dfly_body
+    100002: dfly_wing
+    100004: //RootNode
+    400000: dfly_body
+    400002: dfly_wing
+    400004: //RootNode
+    2100000: dfly_bodyMat
+    2100002: dfly_wingMat
+    2300000: dfly_body
+    2300002: dfly_wing
+    3300000: dfly_body
+    3300002: dfly_wing
+    4300000: dfly_body
+    4300002: dfly_wing
+    2186277476908879412: ImportLogs
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
