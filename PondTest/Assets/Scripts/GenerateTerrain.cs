@@ -14,6 +14,12 @@ public class Tile
         creationTime = ct;
     }
 }
+
+public struct crVals
+{
+    public Vector3 pos;
+    public float updateTime;
+}
 public class GenerateTerrain : MonoBehaviour
 {
     public GameObject plane;
@@ -27,6 +33,8 @@ public class GenerateTerrain : MonoBehaviour
     public int halfTileZ ;
 
     Vector3 startPos;
+
+    bool updateTilesRunning;
 
     Hashtable tiles = new Hashtable();
     // Start is called before the first frame update
@@ -53,12 +61,12 @@ public class GenerateTerrain : MonoBehaviour
             }
         }
 
-
+        updateTilesRunning = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator CreateTile()
     {
+        updateTilesRunning = true;
         int xMove = (int)(player.transform.position.x - startPos.x);
         int zMove = (int)(player.transform.position.z - startPos.z);
 
@@ -79,19 +87,22 @@ public class GenerateTerrain : MonoBehaviour
 
                     if (!tiles.ContainsKey(tileName))
                     {
-                        GameObject t = (GameObject)Instantiate(plane, pos, Quaternion.identity);
-
+                        
+                        GameObject t = (GameObject)Instantiate(plane,pos, Quaternion.identity);
                         t.name = tileName;
                         Tile tile = new Tile(t, updateTime);
                         tiles.Add(tileName, tile);
+                       
                     }
                     else
                     {
                         (tiles[tileName] as Tile).creationTime = updateTime;
                     }
                 }
+                yield return 0;
             }
 
+            yield return 0;
             Hashtable newTerrain = new Hashtable();
             foreach (Tile tls in tiles.Values)
             {
@@ -117,6 +128,18 @@ public class GenerateTerrain : MonoBehaviour
             tiles = newTerrain;
 
             startPos = player.transform.position;
+        }
+
+        updateTilesRunning = false;
+        yield return 0;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!updateTilesRunning)
+        {
+            StartCoroutine("CreateTile");
         }
     }
 }

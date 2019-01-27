@@ -9,6 +9,10 @@ public class TreeManager : MonoBehaviour
     public float minDistance;
     public float maxDistance;
     public List<GameObject> treeList;
+
+    Vector3 closestPos;
+    float closestDist = 9999;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +47,11 @@ public class TreeManager : MonoBehaviour
     {
         treeList.Add(tree);
     }
+    
+    public IEnumerator FindClosestTree()
+    {
+        yield return 0;
+    }
 
     public bool SafeToAddTree(GameObject tree)
     {
@@ -51,8 +60,8 @@ public class TreeManager : MonoBehaviour
         Vector3 plantedPos;
         Vector3 testPos = tree.transform.position ;
 
-        Vector3 closestPos;
-        float closestDist =9999;
+       // Vector3 closestPos;
+         closestDist =9999;
 
         List<GameObject> tempList = treeList;
         // Find Closest tree

@@ -228,8 +228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plane: {fileID: 8236479296180042071, guid: 8a72cdc7155484b47bcdbb9260c30e3e, type: 3}
   player: {fileID: 1330046687}
-  halfTileX: 10
-  halfTileZ: 10
+  halfTileX: 20
+  halfTileZ: 20
 --- !u!114 &316686504
 MonoBehaviour:
   m_ObjectHideFlags: 0
