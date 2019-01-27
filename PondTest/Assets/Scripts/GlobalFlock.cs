@@ -5,11 +5,11 @@ using UnityEngine;
 public class GlobalFlock : MonoBehaviour
 {
     public GameObject bugPrefab;
-    public static float sendboxSize = 1;
+    public static float sendboxSize = 5;
 
     //public GameObject goalMarker;
 
-    static int numBugs = 5;
+    static int numBugs = 15;
     public static GameObject[] allBugs = new GameObject[ numBugs ];
 
     public Vector3 goalPos;

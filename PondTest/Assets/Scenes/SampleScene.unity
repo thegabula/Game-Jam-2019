@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
@@ -1319,6 +1319,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 204914819557583446, guid: 9baf99ec58b361c4b87d108f69365a47,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204914819557583446, guid: 9baf99ec58b361c4b87d108f69365a47,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204914819557583446, guid: 9baf99ec58b361c4b87d108f69365a47,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204914819557583446, guid: 9baf99ec58b361c4b87d108f69365a47,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e6655201acd0e1479b748c86d3dd863, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baf99ec58b361c4b87d108f69365a47, type: 3}
 --- !u!1001 &978143839368090522
