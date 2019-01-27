@@ -5,23 +5,26 @@ using UnityEngine;
 public class Flock : MonoBehaviour
 {
     public float speed = 1f;
+    public float maxSpeed = 2f;
     float rotationSpeed = 4.0f;
     Vector3 averageHeading;
     Vector3 averagePosition;
     float neighbourDistance = 2.0f;
+
+    public GlobalFlock swarm;
 
     bool turning = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = Random.Range(0.5f, 1);
+        speed = Random.Range(1f, maxSpeed);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 goalPos = GlobalFlock.goalPos;
+        Vector3 goalPos = swarm.goalPos;
         if (Vector3.Distance(transform.position, goalPos) >= GlobalFlock.sendboxSize)
         {
             turning = true;
@@ -36,7 +39,7 @@ public class Flock : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation,
                 Quaternion.LookRotation(direction),
                 rotationSpeed * Time.deltaTime);
-            speed = Random.Range(0.5f, 1);
+            speed = Random.Range(1f, maxSpeed);
         }
         else { 
             if (Random.Range(0, 5) < 1)
@@ -46,6 +49,11 @@ public class Flock : MonoBehaviour
         }
         transform.Translate(0, 0, Time.deltaTime * speed);
 
+    }
+
+    public void AssignSwarm(GlobalFlock newSwarm)
+    {
+        swarm = newSwarm;
     }
 
     void ApplyRules()
@@ -60,7 +68,7 @@ public class Flock : MonoBehaviour
         // group speed
         float gSpeed = 0.3f;
 
-        Vector3 goalPos = GlobalFlock.goalPos;
+        Vector3 goalPos = swarm.goalPos;
 
         float dist;
 

@@ -100,7 +100,7 @@ MonoBehaviour:
   depthDivs: 30
   pondPrefab: {fileID: 7281995809490067808, guid: cce776768092815449dc42993230ff6f,
     type: 3}
-  insectSwarmPrefab: {fileID: 4457427177446440834, guid: 0c2a505a1cad03f4f937f3cf730224af,
+  insectSwarmPrefab: {fileID: 7992487540764728761, guid: 0c2a505a1cad03f4f937f3cf730224af,
     type: 3}
   treePrefab: {fileID: 2665374326043154173, guid: bd912ec6c41840646aa17c4d75de3fd0,
     type: 3}

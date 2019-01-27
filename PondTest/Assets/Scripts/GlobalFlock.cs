@@ -12,7 +12,7 @@ public class GlobalFlock : MonoBehaviour
     static int numBugs = 5;
     public static GameObject[] allBugs = new GameObject[ numBugs ];
 
-    public static Vector3 goalPos;
+    public Vector3 goalPos;
 
     // Start is called before the first frame update
     private void Awake()
@@ -27,6 +27,8 @@ public class GlobalFlock : MonoBehaviour
             Vector3 pos = GenGoalPos();
 
             allBugs[i] = Instantiate(bugPrefab, pos, Quaternion.identity);
+            Flock tempBug = allBugs[i].GetComponent<Flock>();
+            tempBug.AssignSwarm(this);
         }
         //Debug.Log( allBugs.Length.ToString() );
     }

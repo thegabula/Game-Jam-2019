@@ -7,8 +7,8 @@ public class BirdMovements : MonoBehaviour
 {
     Rigidbody m_Rigidbody;
     float rotationSpeed = 10.0f;
-    //float smooth = 5.0f;
-    //float tiltAngle = 60.0f;
+    float smooth = 5.0f;
+    float tiltAngle = 20.0f;
     float m_Speed;
     //float minSpeed = 10f;
     //float maxSpeed = 20f;
@@ -23,7 +23,7 @@ public class BirdMovements : MonoBehaviour
         //Fetch the Rigidbody component you attach from your GameObject
         m_Rigidbody = GetComponent<Rigidbody>();
         //Set the speed of the GameObject
-        m_Speed = 3f;
+        m_Speed = 10f;
         // set max speed
         //maxSpeed = 30f;
 
@@ -67,23 +67,23 @@ public class BirdMovements : MonoBehaviour
             }
         }
         */
-
-        if (Input.GetKey("space"))
+       
+     /*   if (Input.GetKey("space"))
         {
-            m_Rigidbody.AddForce(transform.up * 5);
+            m_Rigidbody.AddForce(transform.up * 55);
         }
         else if (Input.GetKeyUp("space"))
         {
             m_Rigidbody.AddForce(transform.up * 0);
         }
-
-        /*
+        */
+        
         float tiltAroundX = 0 - Input.GetAxis("Vertical") * tiltAngle;
         Quaternion target = Quaternion.Euler(tiltAroundX, transform.localEulerAngles.y, 0);
 
         // Dampen towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-        */
+        
 
         transform.Translate(0, 0, Time.deltaTime * m_Speed);
 
