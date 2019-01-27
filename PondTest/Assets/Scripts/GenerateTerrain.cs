@@ -97,6 +97,15 @@ public class GenerateTerrain : MonoBehaviour
             {
                 if (tls.creationTime != updateTime)
                 {
+                    if (tls.theTile != null)
+                    {
+                        GameObject temp = tls.theTile.GetComponent<RollingTerrain>().GetTree();
+                        if (temp != null)
+                        {
+                            TreeManager.instance.RemoveTree(temp);
+                        }
+                    }
+
                     Destroy(tls.theTile);
                 }
                 else
