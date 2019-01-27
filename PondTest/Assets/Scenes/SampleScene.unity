@@ -228,8 +228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plane: {fileID: 8236479296180042071, guid: 8a72cdc7155484b47bcdbb9260c30e3e, type: 3}
   player: {fileID: 1330046687}
-  halfTileX: 20
-  halfTileZ: 20
+  halfTileX: 10
+  halfTileZ: 10
 --- !u!114 &316686504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9f252151f248541a9c657241a5aaf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 10
 --- !u!1 &1955434085
 GameObject:
   m_ObjectHideFlags: 0
