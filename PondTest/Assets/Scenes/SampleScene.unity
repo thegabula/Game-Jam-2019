@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
@@ -230,6 +230,7 @@ MonoBehaviour:
   player: {fileID: 1330046687}
   halfTileX: 20
   halfTileZ: 20
+  count: 0
 --- !u!114 &316686504
 MonoBehaviour:
   m_ObjectHideFlags: 0

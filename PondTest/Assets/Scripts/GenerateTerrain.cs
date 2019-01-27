@@ -35,6 +35,7 @@ public class GenerateTerrain : MonoBehaviour
     Vector3 startPos;
 
     bool updateTilesRunning;
+    public float count;
 
     Hashtable tiles = new Hashtable();
     // Start is called before the first frame update
@@ -100,9 +101,10 @@ public class GenerateTerrain : MonoBehaviour
                     }
                 }
                 yield return 0;
+               // yield return new WaitForSeconds(1);
             }
 
-            yield return 0;
+           // yield return 0;
             Hashtable newTerrain = new Hashtable();
             foreach (Tile tls in tiles.Values)
             {
@@ -135,8 +137,9 @@ public class GenerateTerrain : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        count = tiles.Count;
         if (!updateTilesRunning)
         {
             StartCoroutine("CreateTile");

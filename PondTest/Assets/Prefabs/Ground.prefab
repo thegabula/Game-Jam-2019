@@ -104,6 +104,7 @@ MonoBehaviour:
     type: 3}
   treePrefab: {fileID: 2665374326043154173, guid: bd912ec6c41840646aa17c4d75de3fd0,
     type: 3}
+  myTree: {fileID: 0}
   underWater: 0
   hasBugs: 0
   hasTree: 0
