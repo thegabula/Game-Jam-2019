@@ -112,7 +112,7 @@ public class Flock : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.name == "goose")
+        if (other.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
         }
